@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def show
-
+    @show = Show.find(params[:id])
   end
 
   def new
@@ -13,7 +13,7 @@ class SongsController < ApplicationController
   end
 
   def edit
-
+    @show = Show.find(params[:id])
   end
 
   def update
