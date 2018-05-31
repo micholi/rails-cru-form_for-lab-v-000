@@ -19,4 +19,5 @@ class ArtistsController < ApplicationController
   def update
 
   end
+  
 end
