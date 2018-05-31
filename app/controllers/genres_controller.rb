@@ -4,6 +4,10 @@ class GenresController < ApplicationController
 
   end
 
+  def index
+    @genres = Genre.all
+  end
+
   def new
 
   end
