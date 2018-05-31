@@ -19,5 +19,9 @@ class ArtistsController < ApplicationController
   def update
 
   end
-  
+
+  def artist_params(*args)
+		params.require(:artist).permit(*args)
+	end
+
 end
